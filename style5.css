@@ -1,0 +1,120 @@
+ body {
+    background-color: #fdf6ec;
+    color: #333333;
+    font-family: Arial, sans-serif;
+  }
+ 
+  h1 {
+    font-family: 'Georgia', serif;
+    text-align: center;
+    color: rebeccapurple;
+  }
+ 
+  p.subtitle {
+    text-align: center;
+    color: #8b4513;
+    margin-top: -10px;
+  }
+ 
+  /* group.s */
+  .makanan, .minuman {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #d2a679;
+    border-radius: 10px;
+    background-color: #fffaf0;
+  }
+ 
+  h2 {
+    color: #8b4513;
+  }
+ 
+  /* descant.s */
+  .makanan ul li,
+  .minuman ul li {
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 6px;
+    border-bottom: 1px dashed #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+  .makanan ul li:hover,
+  .minuman ul li:hover {
+    background-color: #ffe4b5;
+  }
+ 
+  .harga {
+    font-weight: bold;
+    color: green;
+    margin-right: 12px;
+  }
+ 
+  .info-item {
+    display: flex;
+    align-items: center;
+  }
+ 
+  /* tombol pilih */
+  button.pilih {
+    background-color: #ff8c42;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+ 
+  button.pilih:hover {
+    background-color: #d2691e;
+  }
+ 
+  button.pilih.dipilih {
+    background-color: #4caf50;
+  }
+ 
+  .ringkasan {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #fff;
+    border: 2px solid #8b4513;
+    border-radius: 10px;
+    text-align: center;
+  }
+ 
+  .ringkasan h3 {
+    margin-top: 0;
+    color: rebeccapurple;
+  }
+ 
+  #total {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #d2691e;
+  }
+ 
+  button.reset {
+    margin-top: 10px;
+    background-color: #b22222;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+ 
+  button.reset:hover {
+    background-color: #8b0000;
+  }
+ 
+  footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: gray;
+    margin-top: 30px;
+  }

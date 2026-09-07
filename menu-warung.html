@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Warung Bu Sari - Menu</title>
+<style>
+  body {
+    background-color: #fdf6ec;
+    color: #333333;
+  }
+
+  h1 {
+    font-family: 'Georgia', serif;
+    text-align: center;
+    color: rebeccapurple;
+  }
+
+  h2 {
+    font-family: Arial, sans-serif;
+    color: #8b4513;
+  }
+
+  /* grouping selector */
+  .makanan, .minuman {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #d2a679;
+    border-radius: 10px;
+    background-color: #fffaf0;
+  }
+
+  /* descendant selector */
+  .makanan ul li {
+    list-style: none;
+    padding: 8px;
+    border-bottom: 1px dashed #ccc;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .minuman ul li {
+    list-style: none;
+    padding: 8px;
+    border-bottom: 1px dashed #ccc;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* pseudo-class hover */
+  .makanan ul li:hover,
+  .minuman ul li:hover {
+    background-color: #ffe4b5;
+    cursor: pointer;
+  }
+
+  .harga {
+    font-weight: bold;
+    color: green;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: gray;
+    margin-top: 30px;
+  }
+</style>
+</head>
+<body>
+
+  <h1>Warung Bu Sari</h1>
+
+  <div class="makanan">
+    <h2>Menu Makanan</h2>
+    <ul>
+      <li><span>Nasi Goreng Spesial</span> <span class="harga">Rp 15.000</span></li>
+      <li><span>Mie Ayam Bakso</span> <span class="harga">Rp 12.000</span></li>
+      <li><span>Ayam Geprek</span> <span class="harga">Rp 13.000</span></li>
+      <li><span>Soto Ayam</span> <span class="harga">Rp 11.000</span></li>
+    </ul>
+  </div>
+
+  <div class="minuman">
+    <h2>Menu Minuman</h2>
+    <ul>
+      <li><span>Es Teh Manis</span> <span class="harga">Rp 4.000</span></li>
+      <li><span>Es Jeruk</span> <span class="harga">Rp 5.000</span></li>
+      <li><span>Kopi Susu</span> <span class="harga">Rp 6.000</span></li>
+      <li><span>Air Mineral</span> <span class="harga">Rp 3.000</span></li>
+    </ul>
+  </div>
+
+  <footer>&copy; 2026 Warung Bu Sari - Menu Digital</footer>
+
+</body>
+</html>
