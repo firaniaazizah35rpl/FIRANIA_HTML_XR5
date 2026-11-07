@@ -1,22 +1,40 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <title>Praktikum 3 - Class dan Tag</title>
-</head>
-<body>
-  <h2>Daftar Buah</h2>
-  <p class="buah">Apel</p>
-  <p class="buah">Jeruk</p>
-  <p class="buah">Mangga</p>
- 
-  <h2>Daftar Hobi</h2>
-  <ul>
-    <li>Ngoding</li>
-    <li>Gaming</li>
-    <li>Musik</li>
-  </ul>
- 
-  <script src="script3.js"></script>
-</body>
+<html lanh='id'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Praktikum 1</title>
+    </head>
+    <body>
+        <h1 id='judul'>Aku belum berubah</h1>
+        <button id='btnUbah'>Ubah Teks</button>
+        <button id='btnWarna'>Ubah Warna</button>
+        <button id='btnUkuran'>Ubah Ukuran</button>
+        <button id='btnReset'>Reset</button>
+
+        <script>
+            const judul = document.getElementById('judul');
+            const btnUbah = document.getElementById('btnUbah');
+            const btnWarna = document.getElementById('btnWarna');
+            const btnUkuran = document.getElementById('btnUkuran');
+            const btnReset = document.getElementById('btnReset');
+
+            btnUbah.addEventListener('click', () => {
+                judul.textContent = 'Aku Sudah Berubah!';
+            });
+
+            btnWarna.addEventListener('click', () => {
+                judul.style.color ='pink';
+         });
+
+          btnUkuran.addEventListener('click', () => {
+                judul.style.fontSize ='50px';
+         });
+
+          btnReset.addEventListener('click', () => {
+                judul.textContent = 'Aku belum berubah';
+                judul.style.color = '';
+                judul.style.fontSize = '';
+         });
+        </script>
+
+    </body>
 </html>

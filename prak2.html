@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='id'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Counter</title>
+        <style>
+            body { font-family: Arial; text-align: center; margin-top: 50px; }
+            #angka { font-size: 64px; }
+            button { font-size: 20px; padding: 10px 20px; margin: 5px;}
+        </style>
+    </head>
+    <body>
+    <h2>Counter</h2>
+    <div id='angka'>0</div>
+    <button id='tambah'>+ Tambah</button>
+    <button id='kurang'>- Kurang</button>
+    <button id='reset'>Reset</button>
+
+    <script>
+        let hitung = 0;
+        const angka = document.getElementById('angka');
+
+        function perbaruiTampilan() {
+        angka.textContent = hitung;
+        
+        if (hitung > 0) {
+            angka.style.color = 'green';  // Hijau jika positif
+        } else if (hitung < 0) {
+            angka.style.color = 'red';    // Merah jika negatif
+        } else {
+            angka.style.color = 'black';  // Hitam jika nol
+        }
+    }
+
+        document.getElementById('tambah').addEventListener('click', () => {
+            hitung = hitung + 1;
+            perbaruiTampilan();
+        });
+
+       document.getElementById('kurang').addEventListener('click', () => {
+        if (hitung > 0) {
+            hitung = hitung - 1;
+            perbaruiTampilan();
+        }
+    });
+
+        document.getElementById('reset').addEventListener('click', () => {
+            hitung = 0;
+            perbaruiTampilan();
+        });
+    </script>
+    </body>
+    </html>
